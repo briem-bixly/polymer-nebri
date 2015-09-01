@@ -1,0 +1,21 @@
+<polymer-element name="polymer-nebrios"
+                 attributes="instanceName apiModule viewName method params body auto contentType context headers withCredentials handleAs"
+                 on-response="{{defaultResponseHandler}}" on-error="{{defaultErrorHandler}}"
+                 on-complete="{{defaultCompleteHandler}}">
+    <template>
+        <core-ajax id="ajax_element"
+                   url="https://{{instanceName}}.nebrios.com/api/v1/{{apiModule}}/{{viewName}}"
+                   handleAs="{{handleAs}}"
+                   method="{{method}}"
+                   withCredentials="{{withCredentials}}"
+                   headers="{{requestHeaders}}"
+                   auto="{{auto}}"
+                   params="{{params}}"
+                   body="{{body}}"
+                   contentType="{{contentType}}"
+                   on-core-complete="{{completeHandler}}"
+                   on-core-response="{{responseHandler}}"
+                   on-core-error="{{errorHandler}}"></core-ajax>
+    </template>
+    <script src="polymer-nebrios.js"></script>
+</polymer-element>
