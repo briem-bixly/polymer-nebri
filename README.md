@@ -26,7 +26,7 @@ This component should be included in your application before you can utilize it
 ```
 
 <h2>Public Functions</h2>
-Polymer NebriOS accepts the following attributes:
+Polymer NebriOS is designed to mimic core-ajax and accepts the following attributes:
 - instanceName: your NebriOS instance name. i.e. https://<strong>instance_name</strong>.nebrios.com
 - apiModule: the name of the api module stored on your NebriOS instance
 - viewName: the name of the target function contained in the given api module
