@@ -27,17 +27,17 @@ This component should be included in your application before you can utilize it
 
 <h2>Public Functions</h2>
 Polymer NebriOS accepts the following attributes:
-instanceName: your NebriOS instance name. i.e. https://<strong>instance_name</strong>.nebrios.com
-apiModule: the name of the api module stored on your NebriOS instance
-viewName: the name of the target function contained in the given api module
-method: the desired HTTP method, defaults to POST
-params: the payload to be urlencoded, usually used in GET requests
-body: the payload in json format
-auto: if the request should be fired automatically
-contentType: the payload content type, defaults to application/json
-headers: any headers that should be added
-withCredentials: sets the withCredentials flag on the request
-handleAs: specifies what data to store in the response property, defaults to json
+- instanceName: your NebriOS instance name. i.e. https://<strong>instance_name</strong>.nebrios.com
+- apiModule: the name of the api module stored on your NebriOS instance
+- viewName: the name of the target function contained in the given api module
+- method: the desired HTTP method, defaults to POST
+- params: the payload to be urlencoded, usually used in GET requests
+- body: the payload in json format
+- auto: if the request should be fired automatically
+- contentType: the payload content type, defaults to application/json
+- headers: any headers that should be added
+- withCredentials: sets the withCredentials flag on the request
+- handleAs: specifies what data to store in the response property, defaults to json
 
 For more information on core-ajax and what can be handled, see https://www.polymer-project.org/0.5/docs/elements/core-ajax.html.
 
