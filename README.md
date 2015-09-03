@@ -56,9 +56,9 @@ For more information on core-ajax and what can be handled, see https://www.polym
         <button on-click="{{sendGreeting}}">Send Greeting!</button>
         <polymer-nebri id="startGreeting"
                          instanceName="instance_name"
-                         apiModule="greeting_api"
-                         viewName="start_greeting"
-                         params='{"greeting":"{{greeting}}"}'
+                         apiModule="api_module"
+                         viewName="view_name"
+                         params='json_payload'
                          method="GET"
                          on-response="{{onResponse}}">
         </polymer-nebri>
@@ -68,7 +68,7 @@ For more information on core-ajax and what can be handled, see https://www.polym
             resp: "",
             greeting: "hello",
             onResponse: function(event, response){
-                console.log(response.response); //outputs {"identifier": "02fe4cee4d484b9bae044bd640bce76"} 
+                console.log(response.response); //outputs api response
             },
             sendGreeting: function(){
                 this.$.startGreeting.go();
