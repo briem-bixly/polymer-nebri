@@ -1,4 +1,4 @@
-Polymer('polymer-nebrios', {
+Polymer('polymer-nebri', {
     instanceName: "demo",
     apiModule: "",
     viewName: "",
