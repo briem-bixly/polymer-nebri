@@ -9,7 +9,7 @@ This component is intended for use with a Nebri instance. Visit https://nebrios.
 <h2>Installation</h2>
 This component can be installed via Bower
 ```
-bower install https://github.com/briem-bixly/polymer-nebrios.git
+bower install https://github.com/briem-bixly/polymer-nebri.git
 ```
 If you are not using Bower for your application, polymer-nebri.js and polymer-nebrios.html should be copied to your preferred location.
 
